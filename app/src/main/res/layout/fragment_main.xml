@@ -8,11 +8,234 @@
 
     <!--Toolbar-->
     <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarmain"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         android:background="@color/colorPrimary"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"/>
 
     <!--Content-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--SCH-->
+            <LinearLayout
+                android:padding="16dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <!--Title-->
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="@dimen/h1"
+                    android:text="SCH="
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <!--Text Field-->
+                <EditText
+                    android:inputType="text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+
+            </LinearLayout>
+
+
+            <!--Name cust-->
+            <TextView
+                android:layout_marginLeft="16dp"
+                android:textStyle="bold"
+                android:textSize="@dimen/h1"
+                android:text="Name Customer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Spinner
+                android:id="@+id/spinnerCustomer"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!--item-->
+            <LinearLayout
+                android:padding="16dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <!--Title-->
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="@dimen/h1"
+                    android:text="Item="
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <!--Text Field-->
+                <EditText
+                    android:inputType="text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+
+            </LinearLayout>
+
+
+            <!--RecievePO-->
+            <TextView
+                android:layout_marginLeft="16dp"
+                android:textStyle="bold"
+                android:textSize="@dimen/h1"
+                android:text="RecievePo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_marginRight="@dimen/margin"
+                android:layout_marginLeft="@dimen/margin"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!--icon-->
+                <ImageView
+                    android:id="@+id/imvReceivePo"
+                    android:src="@drawable/ic_action_calendar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <!--title-->
+                <TextView
+                    android:id="@+id/txtReceivePo"
+                    android:layout_marginLeft="16dp"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/h1"
+                    android:text="dd-mm-yyyy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <!--cusappro-->
+            <TextView
+                android:layout_marginTop="@dimen/margin"
+                android:layout_marginLeft="16dp"
+                android:textStyle="bold"
+                android:textSize="@dimen/h1"
+                android:text="Cusappro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_marginRight="@dimen/margin"
+                android:layout_marginLeft="@dimen/margin"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!--icon-->
+                <ImageView
+                    android:src="@drawable/ic_action_calendar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <!--title-->
+                <TextView
+                    android:layout_marginLeft="16dp"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/h1"
+                    android:text="dd-mm-yyyy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <!--sureappdate-->
+            <TextView
+                android:layout_marginTop="@dimen/margin"
+                android:layout_marginLeft="16dp"
+                android:textStyle="bold"
+                android:textSize="@dimen/h1"
+                android:text="Sureappdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_marginRight="@dimen/margin"
+                android:layout_marginLeft="@dimen/margin"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!--icon-->
+                <ImageView
+                    android:src="@drawable/ic_action_calendar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <!--title-->
+                <TextView
+                    android:layout_marginLeft="16dp"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/h1"
+                    android:text="dd-mm-yyyy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <!--sureapptime-->
+            <TextView
+                android:layout_marginTop="@dimen/margin"
+                android:layout_marginLeft="16dp"
+                android:textStyle="bold"
+                android:textSize="@dimen/h1"
+                android:text="sureapptime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_marginRight="@dimen/margin"
+                android:layout_marginLeft="@dimen/margin"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!--icon-->
+                <ImageView
+                    android:src="@drawable/ic_action_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <!--title-->
+                <TextView
+                    android:layout_marginLeft="16dp"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/h1"
+                    android:text="HH:mm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
 
 </LinearLayout>
